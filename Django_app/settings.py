@@ -124,6 +124,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')#full directory where django should store the uploaded files
+MEDIA_URL = '/media/' #where our uploaded files will be located on the file system
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
